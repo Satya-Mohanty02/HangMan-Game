@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hangman</h1>
+        <div class="hangman-figure">
+            <svg height="250" width="200">
+                <circle cx="100" cy="50" r="20" class="hangman-part" id="head" />
+                <line x1="100" y1="70" x2="100" y2="150" class="hangman-part" id="body" />
+                <line x1="100" y1="100" x2="70" y2="90" class="hangman-part" id="arm-left" />
+                <line x1="100" y1="100" x2="130" y2="90" class="hangman-part" id="arm-right" />
+                <line x1="100" y1="150" x2="80" y2="190" class="hangman-part" id="leg-left" />
+                <line x1="100" y1="150" x2="120" y2="190" class="hangman-part" id="leg-right" />
+            </svg>
+        </div>
+        <div class="word-display"></div>
+        <div class="letters-container"></div>
+        <div class="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

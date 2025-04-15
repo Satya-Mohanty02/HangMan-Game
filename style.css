@@ -1,0 +1,97 @@
+body {
+    font-family: 'Montserrat', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, blue, purple); 
+    color: #333;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 70px;
+    padding: 390px 390 px;
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #555;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); 
+}
+
+.hangman-figure svg {
+background: linear-gradient(to right,green,black);
+    border:  #ddd; 
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.hangman-part {
+    display: none;
+    stroke: #e44d26; 
+    stroke-width: 3;
+    stroke-linecap: round; 
+}
+
+.word-display {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    letter-spacing: 15px;
+    color: #2c3e50; 
+    font-weight: bold;
+}
+
+.hint {
+    font-style: italic;
+    color: #7f8c8d; 
+    margin-bottom: 15px;
+}
+
+.letters-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr)); 
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.letters-container button {
+    padding: 12px 18px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: black; 
+    color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.letters-container button:hover {
+    background-color: #2980b9; 
+    transform: scale(1.05); 
+}
+
+.letters-container button:disabled {
+    background-color: #bdc3c7; 
+    color: #95a5a6;
+    cursor: not-allowed;
+    transform: scale(1); 
+}
+
+.message {
+    font-size: 1.4em;
+    margin-top: 25px;
+    font-weight: bold;
+    color: #27ae60; 
+}
+
+.message.lose {
+    color: #c0392b; 
+}
